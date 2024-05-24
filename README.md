@@ -1,7 +1,5 @@
 # datafun-05-sql
 
-# Creating an initial data story in a Jupyter notebook
-
 #### I created a new repo in Github
 #### I added the README.md file when creating the new repo
 #### I opened the Documents folder in File Explorer since that is where I wanted this project to be stored
