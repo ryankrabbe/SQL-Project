@@ -1,9 +1,6 @@
 import sqlite3
 import pandas as pd
 import pathlib
-import logging
-
-logging.basicConfig(filename='log.txt', level=logging.DEBUG, filemode='a', format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Define the database file in the current root project directory
 db_file = pathlib.Path("project.db")
@@ -24,7 +21,7 @@ def create_tables():
     """Function to read and execute SQL statements to create tables"""
     try:
         with sqlite3.connect(db_file) as conn:
-            sql_file = pathlib.Path("sql", "create_tables.sql")
+            sql_file = r"C:\Users\Ryan Krabbe\Documents\datafun-05-sql\sql\create_tables.sql"
             with open(sql_file, "r") as file:
                 sql_script = file.read()
             conn.executescript(sql_script)
@@ -53,9 +50,6 @@ def main():
     create_database()
     create_tables()
     insert_data_from_csv()
-'''
+
 if __name__ == "__main__":
-    logging.info("Program started") 
     main()
-    logging.info("Program ended")  
-'''
