@@ -32,3 +32,64 @@ pip install pandas pyarrow
 python -m pip freeze > requirements.txt
 
 ```
+
+## Implement Different SQL Operations
+
+#### Implement SQL statements and queries to perform additional operations and use Python to execute your SQL statements.
+
+1. create_tables.sql - create your database schema using sql
+
+```shell
+
+CREATE TABLE books (
+    book_id TEXT PRIMARY KEY,
+    title TEXT,
+    year_published INTEGER,
+    author_id TEXT,
+    FOREIGN KEY (author_id) REFERENCES authors(author_id)
+);
+
+CREATE TABLE authors (
+    author_id TEXT PRIMARY KEY,
+    first TEXT,
+    last TEXT,
+);
+
+```
+
+2. insert_records.sql - insert at least 10 additional records into each table.
+
+```shell
+
+insert into authors (author_id, first_name, last_name) values
+
+insert into books (book_id, title, year_published, author_id) value
+
+```
+
+3. update_records.sql - update 1 or more records in a table.
+
+```shell
+
+update authors
+SET last = ''
+where last = 'Rowling';
+
+UPDATE books
+SET title = 'Books Made into Movies in the 2000s'
+WHERE year_published IN ('1925', '1813', '1954', '1997');
+
+```
+
+4. delete_records.sql
+
+```shell
+
+delete from authors
+where last = ''
+
+delete from books
+where title = 'Books Made into Movies in the 2000s'
+
+```
+
