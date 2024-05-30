@@ -81,7 +81,7 @@ WHERE year_published IN ('1925', '1813', '1954', '1997');
 
 ```
 
-4. delete_records.sql
+4. delete_records.sql - delete 1 or more records from a table.
 
 ```shell
 
@@ -93,3 +93,56 @@ where title = 'Books Made into Movies in the 2000s'
 
 ```
 
+5. query_aggregation.sql - use aggregation functions including COUNT, AVG, SUM.
+
+```shell
+
+SELECT
+    COUNT(book_id) AS total_books,
+    AVG(year_published) AS average_year_published,
+    SUM(year_published) AS sum_years_published
+FROM
+    books;
+
+```
+
+6. query_filter.sql - use WHERE to filter data based on conditions.
+
+```shell
+
+SELECT *
+FROM authors
+WHERE last = 'Tolkien';
+
+```
+
+7. query_sorting.sql - use ORDER BY to sort data.
+
+```shell
+
+SELECT *
+FROM books
+ORDER BY year_published ASC;
+
+```
+
+8. query_group_by.sql - use GROUP BY clause (and optionally with aggregation)
+
+```shell
+
+SELECT year_published, COUNT(*) AS book_count
+FROM books
+GROUP BY year_published
+ORDER BY year_published DESC;
+
+```
+
+9. query_join.sql - use INNER JOIN operation and optionally include LEFT JOIN, RIGHT JOIN, etc.
+
+```shell
+
+SELECT books.book_id, books.title, books.year_published, authors.first, authors.last
+FROM books
+INNER JOIN authors ON books.author_id = authors.author_id;
+
+```
