@@ -146,3 +146,15 @@ FROM books
 INNER JOIN authors ON books.author_id = authors.author_id;
 
 ```
+
+## In Summary
+
+I utilized AI, previous exercises from the modules and comparing my work to my classmates in the discussion to complete this project.
+
+It was very difficult and I struggled on portions of it, but whenever I got everything to run successfully end the end it was worth it.
+
+I called my .sql functions to my project.db with the db_operations file I created at the end.
+
+## Source for the project
+
+https://github.com/denisecase/datafun-05-spec
