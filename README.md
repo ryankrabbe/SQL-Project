@@ -155,8 +155,7 @@ It was very difficult and I struggled on portions of it, but whenever I got ever
 
 I called my .sql functions to my project.db with the db_operations file I created at the end. Picture below to show my final work with all files and tables.
 
-![image](https://github.com/ryankrabbe/datafun-05-sql/assets/161783561/8e74624f-e87e-425b-98c9-8214f163c374)
-
+![image](https://github.com/ryankrabbe/datafun-05-sql/assets/161783561/9d3a6127-7401-43db-aef5-5515457cc75d)
 
 ## Source for the project
 
