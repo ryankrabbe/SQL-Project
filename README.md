@@ -158,3 +158,5 @@ I called my .sql functions to my project.db with the db_operations file I create
 ## Source for the project
 
 https://github.com/denisecase/datafun-05-spec
+
+![image](https://github.com/ryankrabbe/datafun-05-sql/assets/161783561/9205659d-f282-4691-be85-84650ddd49ef)
