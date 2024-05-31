@@ -61,7 +61,7 @@ CREATE TABLE authors (
 
 ```shell
 
-insert into authors (author_id, first_name, last_name) values
+insert into authors (author_id, first, last) values
 
 insert into books (book_id, title, year_published, author_id) value
 
@@ -86,7 +86,7 @@ WHERE year_published IN ('1925', '1813', '1954', '1997');
 ```shell
 
 delete from authors
-where last = ''
+where last = 'Rowling'
 
 delete from books
 where title = 'Books Made into Movies in the 2000s'

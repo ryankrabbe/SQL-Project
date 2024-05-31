@@ -1,3 +1,3 @@
 SELECT *
 FROM authors
-WHERE last = 'Tolkien';
+WHERE LAST = 'Tolkien';

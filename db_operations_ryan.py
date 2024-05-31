@@ -72,7 +72,7 @@ def query_aggregation():
             result = cursor.fetchone()
             print("Total Books:", result[0])
             print("Average Year Published:", round(result[1]))
-            print("Average Title Length:", round(result[2]), "characters.")
+            print("Min Year Published:", round(result[2]), "characters.")
     except sqlite3.Error as e:
         print("Error querying aggregation for books:", e)
 
@@ -87,7 +87,7 @@ def query_filter():
             cursor = conn.execute(sql_script)
             books = cursor.fetchall()
             for book in books:
-                print(book[1], book[2])  # Print title and year_published
+                print(book[1], book[2])
     except sqlite3.Error as e:
         print("Error filtering book data:", e)
 
@@ -102,7 +102,7 @@ def query_sorting():
             cursor = conn.execute(sql_script)
             books = cursor.fetchall()
             for book in books:
-                print(book[0], book[1])  # Print year_published and title
+                print(book[0], book[1])
     except sqlite3.Error as e:
         print("Error sorting book data:", e)
 
@@ -117,7 +117,7 @@ def query_group_by():
             cursor = conn.cursor()
             cursor.execute(sql_script)
             results = cursor.fetchall()
-            print("Title Length Group\tCount of Books")
+            print("Year Published\tCount of Books")
             for row in results:
                 print(f"{row[0]}\t\t{row[1]}")
             print("Query executed successfully.")
