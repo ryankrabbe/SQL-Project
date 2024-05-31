@@ -153,7 +153,10 @@ I utilized AI, previous exercises from the modules and comparing my work to my c
 
 It was very difficult and I struggled on portions of it, but whenever I got everything to run successfully end the end it was worth it.
 
-I called my .sql functions to my project.db with the db_operations file I created at the end.
+I called my .sql functions to my project.db with the db_operations file I created at the end. Picture below to show my final work with all files and tables.
+
+![image](https://github.com/ryankrabbe/datafun-05-sql/assets/161783561/8e74624f-e87e-425b-98c9-8214f163c374)
+
 
 ## Source for the project
 
